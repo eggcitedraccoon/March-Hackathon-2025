@@ -6,12 +6,14 @@ March-Hackathon-2025/
 │─── Radio/            # Radio communication library
 │    ├── Radio.h
 │    ├── Radio.cpp
+│    ├── examples/     # Example sketches for Radio library
 │─── KYPD/             # Keypad input library
 │    ├── KYPD.h
 │    ├── KYPD.cpp
+│    ├── examples/     # Example sketches for KYPD library
 │─── docs/             # Additional materials (PDFs, instructions, etc.)
-│    ├── guide.pdf
-│    ├── datasheet.pdf
+│    ├── Presentation_1st_day.pdf
+│    ├── Tasks.pdf
 │─── README.md         # This documentation file
 │─── LICENSE           # Licensing file
 ```
@@ -46,18 +48,8 @@ Since some participants may not have access to the Arduino `libraries/` folder, 
 
 ## 📄 **Additional Materials**
 For more information, refer to the PDF guides available in the `docs/` folder:
-- **`guide.pdf`** – Detailed explanation of the libraries and hardware setup.
-- **`datasheet.pdf`** – Specifications and pinouts for the supported modules.
-
----
-
-## ❓ **Troubleshooting & Support**
-If you encounter issues:
-- Ensure all connections are correct and modules are powered properly.
-- Verify that the library headers (`Radio.h`, `KYPD.h`) are included in your project.
-- Check the `examples/` folder for working Arduino sketches.
-
-For additional support, feel free to ask in the **Hackathon Discord** or open an **issue on GitHub**.
+- **`Presentation_1st_day.pdf`** – Detailed explanation of the libraries and hardware setup.
+- **`Tasks.pdf`** – Competition tasks.
 
 ---
 
