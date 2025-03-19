@@ -27,7 +27,7 @@ const uint64_t address[2][10] = {
 
   // Internal initialization functions
   bool begin(uint8_t rxPin, uint8_t txPin, uint8_t setPin, uint8_t channel);
-  bool begin(uint8_t cePin, uint8_t csnPin, uint8_t channel);
+  bool begin(uint8_t cePin, uint8_t cnsPin, uint8_t channel);
 
 public:
   Radio(ModuleType module);

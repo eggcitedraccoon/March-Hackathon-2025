@@ -23,13 +23,13 @@ Radio::~Radio() {
 }
 
 // Initialize the NRF24 module with CE and CSN pins and a communication channel
-bool Radio::begin(uint8_t cePin, uint8_t csnPin, uint8_t channel) {
+bool Radio::begin(uint8_t cePin, uint8_t cnsPin, uint8_t channel) {
   if (radioModule)
     delete static_cast<RF24*>(radioModule);  // Prevent memory leak by deleting previous allocation
 
   switch (moduleType) {
     case NRF24_1:
-      radioModule = new RF24(cePin, csnPin);
+      radioModule = new RF24(cePin, cnsPin);
       if (!static_cast<RF24*>(radioModule)->begin())
         return false;
       static_cast<RF24*>(radioModule)->setPALevel(RF24_PA_MAX);
@@ -38,7 +38,7 @@ bool Radio::begin(uint8_t cePin, uint8_t csnPin, uint8_t channel) {
       static_cast<RF24*>(radioModule)->startListening();                         // Start receiving mode
       return true;
     case NRF24_2:
-      radioModule = new RF24(cePin, csnPin);
+      radioModule = new RF24(cePin, cnsPin);
       if (!static_cast<RF24*>(radioModule)->begin())
         return false;
       static_cast<RF24*>(radioModule)->setPALevel(RF24_PA_MAX);
