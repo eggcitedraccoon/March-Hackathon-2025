@@ -26,13 +26,12 @@ Since some participants may not have access to the Arduino `libraries/` folder, 
 ### 1️⃣ **Adding the Libraries to Your Project**
 
 #### **Method 1: Include Libraries Inside Your Project Folder (Recommended)**
-1. Copy the `Radio/` and `KYPD/` folders **into the same directory as your sketch** (`.ino` file).
+1. Copy the `Radio.h` and `Radio.cpp` files **into the same directory as your sketch** (`.ino` file).
 2. In your Arduino sketch (`.ino` file), include the headers with:
    ```cpp
-   #include "Radio/Radio.h"
-   #include "KYPD/KYPD.h"
+   #include "Radio.h"
    ```
-
+3. Do the same with the `KYPD.h` and `KYPD.cpp` files, so you have KYPD library.
 #### **Method 2: Install Libraries in the Arduino Libraries Folder**
 1. Copy `Radio/` and `KYPD/` folders to your Arduino libraries directory:
    - On **Windows**: `C:\Users\YourName\Documents\Arduino\libraries\`
@@ -43,7 +42,7 @@ Since some participants may not have access to the Arduino `libraries/` folder, 
    #include <Radio.h>
    #include <KYPD.h>
    ```
-
+4. This might not work on the university computers, so stick with **Method 1** in this case
 ---
 
 ## 📄 **Additional Materials**
